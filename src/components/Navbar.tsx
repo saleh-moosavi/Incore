@@ -40,7 +40,7 @@ export default function Navbar() {
   if (width >= 679) {
     return (
       <div
-        className={`fixed top-0 w-screen flex justify-around items-center py-5 z-50 transition-all duration-300 ${
+        className={`fixed top-0 w-screen flex justify-around items-center py-3 backdrop-blur-sm z-50 transition-all duration-300 ${
           scroll > 100 ? "bg-black/30" : ""
         }`}
       >

@@ -1,4 +1,6 @@
+import Card from "./component/Card";
 import Gallery from "./component/Gallery";
+import GlassCard from "./component/GlassCard";
 import Header from "./component/Header";
 
 export default function AllTogether() {
@@ -6,6 +8,8 @@ export default function AllTogether() {
     <div className="">
       <Header />
       <Gallery />
+      <Card />
+      <GlassCard />
     </div>
   );
 }

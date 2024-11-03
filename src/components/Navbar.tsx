@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Btn from "./Btn";
+import { IoIosMenu } from "react-icons/io";
 
 
 export default function Navbar() {
@@ -39,7 +40,7 @@ export default function Navbar() {
   if (width >= 679) {
     return (
       <div
-        className={`fixed top-0 w-full flex justify-around items-center py-5 z-50 transition-all duration-300 ${
+        className={`fixed top-0 w-screen flex justify-around items-center py-5 z-50 transition-all duration-300 ${
           scroll > 100 ? "bg-black/30" : ""
         }`}
       >
@@ -67,17 +68,16 @@ export default function Navbar() {
   } else {
     return (
       <div
-        className={`fixed top-0 w-full flex justify-between px-5 py-5 items-center z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 flex justify-between px-5 py-5 items-center z-50 transition-all duration-300 ${
           scroll > 100 ? "bg-black/30" : ""
         }`}
       >
         <h2 className="text-white text-2xl font-semibold">Incore</h2>
         <a
           onClick={sideBarOpen}
-          className="rotate-90 text-white hover:text-slate-200 text-2xl hover:scale-125 transition-all duration-300"
-          href=""
+          className="text-white hover:text-slate-200 text-2xl hover:scale-125 transition-all duration-300 cursor-pointer"
         >
-          |||
+          <IoIosMenu />
         </a>
         <ul
           ref={sidebar}

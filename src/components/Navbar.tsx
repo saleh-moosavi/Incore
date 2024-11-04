@@ -43,7 +43,7 @@ export default function Navbar() {
           scroll > 100 ? "bg-black/30" : ""
         }`}
       >
-        <h2 className="text-white text-2xl font-semibold">Incore</h2>
+        <h2 className="text-white text-2xl font-semibold cursor-pointer">Incore</h2>
         <ul className="flex gap-x-5 text-white font-semibold bg-white/10 backdrop-blur-sm px-5 py-1 rounded-full shadow-[0_-1px_0_#fff]">
           <li className="hover:shadow-[0_1px_0_#fff] transition-all duration-300 cursor-pointer">
             Home

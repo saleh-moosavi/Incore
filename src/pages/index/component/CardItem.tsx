@@ -1,13 +1,13 @@
-export function CardItem(props: { show?: boolean }) {
+export function CardItem(props: { show?: boolean,link:string }) {
   return (
     <div
-      className={`flex flex-col bg-white rounded-md lg:rounded-lg shadow-lg ${
+      className={`flex flex-col bg-white rounded-md lg:rounded-lg shadow-lg cursor-pointer hover:-translate-y-2 transition-all duration-300 ${
         props.show ? "hidden md:flex" : ""
       }`}
     >
       <img
         className="rounded-md h-40 md:h-52 lg:h-72 object-cover object-top"
-        src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/4c0ccb9b-8426-4e33-b4fe-bbca293efc32/width=450/718471.jpeg"
+        src={props.link}
         alt=""
       />
       <div className="text-left p-2 md:p-4 lg:p-6 text-xs md:text-sm">

@@ -1,4 +1,4 @@
-export default function GlassCardItem(props: any) {
+export default function GlassCardItem(props: { show?: boolean }) {
   return (
     <div
       className={`w-full flex justify-center relative my-2 ${

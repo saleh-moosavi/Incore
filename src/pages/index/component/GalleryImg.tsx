@@ -1,4 +1,4 @@
-export default function GalleryImg(props: any) {
+export default function GalleryImg(props: { side?: string }) {
   return (
     <>
       <div className="mt-5 px-5 grid grid-cols-2 md:grid-cols-4 gap-5 justify-center xl:min-w-7xl xl:mx-auto">

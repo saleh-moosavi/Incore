@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import Btn from "./Btn";
 import { IoIosMenu } from "react-icons/io";
 
-
 export default function Navbar() {
   const sidebar: any = useRef();
   const [width, setWidth] = useState(window.innerWidth);
@@ -24,13 +23,13 @@ export default function Navbar() {
     };
   }, []);
 
-  function sideBarClose(e: any) {
+  function sideBarClose(e: React.MouseEvent) {
     e.preventDefault();
     sidebar.current.style.transform = "translateX(100%)";
     document.body.style.overflowY = "auto";
     setBackdrop(!backdrop);
   }
-  function sideBarOpen(e: any) {
+  function sideBarOpen(e: React.MouseEvent) {
     e.preventDefault();
     sidebar.current.style.transform = "translateX(0)";
     document.body.style.overflowY = "hidden";

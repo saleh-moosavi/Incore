@@ -5,7 +5,7 @@ import Header from "./component/Header";
 
 export default function AllTogether() {
   return (
-    <div className="">
+    <div>
       <Header />
       <Gallery />
       <Card />

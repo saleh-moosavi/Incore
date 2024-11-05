@@ -43,7 +43,9 @@ export default function Navbar() {
           scroll > 100 ? "bg-black/30" : ""
         }`}
       >
-        <h2 className="text-white text-2xl font-semibold cursor-pointer">Incore</h2>
+        <h2 className="text-white text-2xl font-semibold cursor-pointer">
+          Incore
+        </h2>
         <ul className="flex gap-x-5 text-white font-semibold bg-white/10 backdrop-blur-sm px-5 py-1 rounded-full shadow-[0_-1px_0_#fff]">
           <li className="hover:shadow-[0_1px_0_#fff] transition-all duration-300 cursor-pointer">
             Home
@@ -67,7 +69,7 @@ export default function Navbar() {
   } else {
     return (
       <div
-        className={`fixed top-0 left-0 right-0 flex justify-between px-5 py-5 items-center z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 flex justify-between px-5 py-3 items-center z-50 transition-all duration-300 ${
           scroll > 100 ? "bg-black/30" : ""
         }`}
       >
@@ -80,7 +82,7 @@ export default function Navbar() {
         </a>
         <ul
           ref={sidebar}
-          className="flex flex-col w-1/2 text-right px-5 gap-y-2 py-10 fixed top-0 bottom-0 right-0 gap-x-5 text-white font-semibold bg-black/20 backdrop-blur-sm transition-all duration-300 translate-x-full z-50"
+          className="flex flex-col w-1/2 text-right px-5 gap-y-2 py-10 fixed top-0 bottom-0 right-0 gap-x-5 text-white font-semibold bg-black/20 backdrop-blur-md transition-all duration-300 translate-x-full z-50"
         >
           <div className="relative text-left">
             <a
@@ -110,7 +112,7 @@ export default function Navbar() {
         </ul>
         <div
           onClick={sideBarClose}
-          className={`fixed top-0 bottom-0 left-0 right-0 bg-gray-100/10 z-40 ${
+          className={`fixed top-0 bottom-0 left-0 right-0 bg-gray-500/10 z-40 ${
             backdrop ? "hidden" : null
           }`}
         ></div>

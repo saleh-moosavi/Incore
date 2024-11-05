@@ -6,7 +6,7 @@ export default function GlassCardItem(props: { show?: boolean, link:string }) {
       }`}
     >
       <img
-        className="shadow-xl object-cover object-top h-72 sm:h-96 md:h-[35rem] w-full hover:scale-[1.02] transition-all duration-300"
+        className="shadow-xl object-cover object-top h-72 sm:h-96 md:h-[35rem] w-full hover:scale-[1.05] transition-all duration-300"
         src={props.link}
       />
       <div className="absolute bottom-0 w-40 md:w-60 bg-white/30 backdrop-blur-[5px] mb-3 rounded-md p-2 text-left shadow-[-0.3px_-1px_1px_#fff]">

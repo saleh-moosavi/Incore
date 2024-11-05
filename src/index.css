@@ -10,3 +10,9 @@
 ::-webkit-scrollbar-thumb{
     background-image: linear-gradient(to top , rgb(238, 199, 84) , rgb(31, 7, 136)70%);
 }
+
+@media screen and (width<678px) {
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+}

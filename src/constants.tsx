@@ -1,4 +1,4 @@
-import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { HiOutlineLightBulb, HiOutlineOfficeBuilding } from "react-icons/hi";
 import {
   HiOutlineCheckBadge,
   HiOutlineUsers,
@@ -6,6 +6,7 @@ import {
   HiOutlineShieldCheck,
   HiOutlineTrophy,
   HiOutlineGlobeAlt,
+  HiOutlineBuildingOffice2,
 } from "react-icons/hi2";
 import {
   FaBuilding,
@@ -64,5 +65,30 @@ export const trustBarCertifications = [
     icon: HiOutlineGlobeAlt,
     title: "عضویت FIDIC",
     subtitle: "استاندارد بین‌المللی",
+  },
+];
+
+export const AboutSummaryFeatures = [
+  "تیم مهندسی مجرب و متخصص",
+  "استفاده از مصالح استاندارد و باکیفیت",
+  "پایبندی به زمان‌بندی پروژه",
+  "پشتیبانی و ضمانت پس از اجرا",
+];
+
+export const AboutSummaryPillars = [
+  {
+    icon: HiOutlineBuildingOffice2,
+    title: "تجربه اجرایی",
+    desc: "بیش از ۲۴۰ پروژه موفق در سراسر کشور",
+  },
+  {
+    icon: HiOutlineLightBulb,
+    title: "نوآوری",
+    desc: "استفاده از تکنولوژی‌های نوین ساخت",
+  },
+  {
+    icon: HiOutlineShieldCheck,
+    title: "تضمین کیفیت",
+    desc: "رعایت استانداردهای ISO و FIDIC",
   },
 ];

@@ -1,5 +1,6 @@
 import Hero from "./component/Hero";
 import TrustBar from "./component/TrustBar";
+import Services from "./component/Services";
 import AboutSummary from "./component/AboutSummary";
 
 export default function AllTogether() {
@@ -8,6 +9,7 @@ export default function AllTogether() {
       <Hero />
       <TrustBar />
       <AboutSummary />
+      <Services />
     </div>
   );
 }

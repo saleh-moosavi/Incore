@@ -1,4 +1,8 @@
-import { HiOutlineLightBulb, HiOutlineOfficeBuilding } from "react-icons/hi";
+import {
+  HiOutlineLightBulb,
+  HiOutlineOfficeBuilding,
+  HiOutlineTruck,
+} from "react-icons/hi";
 import {
   HiOutlineCheckBadge,
   HiOutlineUsers,
@@ -7,6 +11,9 @@ import {
   HiOutlineTrophy,
   HiOutlineGlobeAlt,
   HiOutlineBuildingOffice2,
+  HiOutlinePencilSquare,
+  HiOutlineClipboardDocumentCheck,
+  HiOutlineHomeModern,
 } from "react-icons/hi2";
 import {
   FaBuilding,
@@ -90,5 +97,50 @@ export const AboutSummaryPillars = [
     icon: HiOutlineShieldCheck,
     title: "تضمین کیفیت",
     desc: "رعایت استانداردهای ISO و FIDIC",
+  },
+];
+
+export const ServicesData = [
+  {
+    icon: HiOutlineBuildingOffice2,
+    title: "اجرای ساختمان",
+    desc: "ساخت انواع سازه‌های مسکونی، تجاری و صنعتی با رعایت کامل استانداردهای مهندسی.",
+    to: "/services/construction",
+    tags: ["سازه بتنی", "فلزی", "اسکلت"],
+  },
+  {
+    icon: HiOutlineWrenchScrewdriver,
+    title: "بازسازی و نوسازی",
+    desc: "احیای بناهای قدیمی و بازسازی کامل با طراحی مدرن و مصالح نوین.",
+    to: "/services/renovation",
+    tags: ["نوسازی", "مقاوم‌سازی"],
+  },
+  {
+    icon: HiOutlinePencilSquare,
+    title: "طراحی و نقشه‌کشی",
+    desc: "طراحی معماری و سازه، نقشه‌کشی فنی و مدل‌سازی سه‌بعدی با نرم‌افزارهای روز.",
+    to: "/services/design",
+    tags: ["BIM", "معماری", "سازه"],
+  },
+  {
+    icon: HiOutlineClipboardDocumentCheck,
+    title: "مشاوره مهندسی",
+    desc: "ارائه مشاوره تخصصی در انتخاب مصالح، برآورد هزینه و مدیریت پروژه.",
+    to: "/services/consulting",
+    tags: ["برآورد", "مدیریت"],
+  },
+  {
+    icon: HiOutlineHomeModern,
+    title: "دکوراسیون داخلی",
+    desc: "طراحی و اجرای دکوراسیون داخلی لوکس با تیم حرفه‌ای و مصالح درجه یک.",
+    to: "/services/interior",
+    tags: ["لوکس", "مدرن"],
+  },
+  {
+    icon: HiOutlineTruck,
+    title: "تأمین مصالح",
+    desc: "تأمین و توزیع مصالح ساختمانی استاندارد با قیمت رقابتی و ارسال سریع.",
+    to: "/services/materials",
+    tags: ["مصالح", "توزیع"],
   },
 ];

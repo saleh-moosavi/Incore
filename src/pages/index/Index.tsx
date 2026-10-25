@@ -1,4 +1,5 @@
 import Hero from "./component/Hero";
+import WhyUs from "./component/WhyUs";
 import TrustBar from "./component/TrustBar";
 import Services from "./component/Services";
 import AboutSummary from "./component/AboutSummary";
@@ -10,6 +11,7 @@ export default function AllTogether() {
       <TrustBar />
       <AboutSummary />
       <Services />
+      <WhyUs />
     </div>
   );
 }

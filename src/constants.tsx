@@ -1,7 +1,11 @@
 import {
+  HiOutlineClock,
+  HiOutlineCurrencyDollar,
   HiOutlineLightBulb,
   HiOutlineOfficeBuilding,
+  HiOutlineSparkles,
   HiOutlineTruck,
+  HiOutlineUserGroup,
 } from "react-icons/hi";
 import {
   HiOutlineCheckBadge,
@@ -142,5 +146,38 @@ export const ServicesData = [
     desc: "تأمین و توزیع مصالح ساختمانی استاندارد با قیمت رقابتی و ارسال سریع.",
     to: "/services/materials",
     tags: ["مصالح", "توزیع"],
+  },
+];
+
+export const WhyUsReasons = [
+  {
+    icon: HiOutlineClock,
+    title: "تحویل به‌موقع",
+    desc: "پایبندی کامل به زمان‌بندی قرارداد با مدیریت دقیق مراحل پروژه.",
+  },
+  {
+    icon: HiOutlineShieldCheck,
+    title: "تضمین کیفیت",
+    desc: "رعایت استانداردهای ISO و کنترل کیفیت در تمام مراحل اجرا.",
+  },
+  {
+    icon: HiOutlineUserGroup,
+    title: "تیم متخصص",
+    desc: "مهندسان و تکنسین‌های مجرب با سال‌ها تجربه اجرایی در پروژه‌های بزرگ.",
+  },
+  {
+    icon: HiOutlineCurrencyDollar,
+    title: "قیمت رقابتی",
+    desc: "شفافیت کامل در هزینه‌ها و ارائه بهترین قیمت بدون کاهش کیفیت.",
+  },
+  {
+    icon: HiOutlineWrenchScrewdriver,
+    title: "تجهیزات مدرن",
+    desc: "استفاده از ماشین‌آلات و فناوری‌های روز دنیا در اجرای پروژه‌ها.",
+  },
+  {
+    icon: HiOutlineSparkles,
+    title: "پشتیبانی پس از تحویل",
+    desc: "گارانتی و خدمات پس از فروش برای اطمینان خاطر کامل شما.",
   },
 ];

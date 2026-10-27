@@ -181,3 +181,80 @@ export const WhyUsReasons = [
     desc: "گارانتی و خدمات پس از فروش برای اطمینان خاطر کامل شما.",
   },
 ];
+
+export const PortfolioCategories = [
+  { key: "all", label: "همه پروژه‌ها" },
+  { key: "residential", label: "مسکونی" },
+  { key: "commercial", label: "تجاری" },
+  { key: "industrial", label: "صنعتی" },
+  { key: "renovation", label: "بازسازی" },
+] as const;
+
+export type CategoryKey = (typeof PortfolioCategories)[number]["key"];
+
+interface Project {
+  id: number;
+  title: string;
+  category: Exclude<CategoryKey, "all">;
+  categoryLabel: string;
+  location: string;
+  year: string;
+  image: string;
+}
+
+export const PortfolioProject: Project[] = [
+  {
+    id: 1,
+    title: "برج مسکونی آرمان",
+    category: "residential",
+    categoryLabel: "مسکونی",
+    location: "تهران، سعادت‌آباد",
+    year: "۱۴۰۳",
+    image: "/assets/hero.jpg",
+  },
+  {
+    id: 2,
+    title: "مجتمع تجاری پارسیان",
+    category: "commercial",
+    categoryLabel: "تجاری",
+    location: "تهران، ونک",
+    year: "۱۴۰۲",
+    image: "/assets/parsian.jpg",
+  },
+  {
+    id: 3,
+    title: "کارخانه صنایع فولاد",
+    category: "industrial",
+    categoryLabel: "صنعتی",
+    location: "اصفهان، شهرک صنعتی",
+    year: "۱۴۰۲",
+    image: "/assets/foolad.jpg",
+  },
+  {
+    id: 4,
+    title: "بازسازی عمارت قاجاری",
+    category: "renovation",
+    categoryLabel: "بازسازی",
+    location: "تهران، ولیعصر",
+    year: "۱۴۰۳",
+    image: "/assets/ghajar.jpg",
+  },
+  {
+    id: 5,
+    title: "ویلاهای لوکس شمال",
+    category: "residential",
+    categoryLabel: "مسکونی",
+    location: "مازندران، رامسر",
+    year: "۱۴۰۲",
+    image: "/assets/shomal.jpg",
+  },
+  {
+    id: 6,
+    title: "مرکز خرید آفتاب",
+    category: "commercial",
+    categoryLabel: "تجاری",
+    location: "شیراز، معالی‌آباد",
+    year: "۱۴۰۱",
+    image: "/assets/aftab.webp",
+  },
+];

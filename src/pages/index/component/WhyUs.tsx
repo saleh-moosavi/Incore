@@ -10,8 +10,8 @@ const WhyUs = () => {
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
-            دلایلی که
-            <span className="text-gradient">ما را انتخاب می‌کنند </span>
+            دلایلی که{" "}
+            <span className="text-gradient">ما را انتخاب می‌کنند</span>
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-slate-400">
             کیفیت، تعهد و تخصص؛ سه اصل جدانشدنی که در هر پروژه به آن پایبندیم.

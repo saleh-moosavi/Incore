@@ -2,6 +2,7 @@ import Hero from "./component/Hero";
 import WhyUs from "./component/WhyUs";
 import TrustBar from "./component/TrustBar";
 import Services from "./component/Services";
+import Comments from "./component/Comments";
 import Portfolio from "./component/Portfolio";
 import AboutSummary from "./component/AboutSummary";
 
@@ -14,6 +15,7 @@ export default function AllTogether() {
       <Services />
       <WhyUs />
       <Portfolio />
+      <Comments />
     </div>
   );
 }

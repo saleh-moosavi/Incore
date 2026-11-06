@@ -312,3 +312,47 @@ export const comments: IComments[] = [
     project: "بازسازی عمارت قاجاری",
   },
 ];
+
+interface IMember {
+  id: number;
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+  socials: { linkedin?: string; twitter?: string; email?: string };
+}
+
+export const TeamMembers: IMember[] = [
+  {
+    id: 1,
+    name: "مهندس محمدرضا آرمانی",
+    role: "مدیرعامل و بنیان‌گذار",
+    bio: "دکترای مهندسی عمران، ۲۰+ سال تجربه در مدیریت پروژه‌های بزرگ ملی",
+    image: "https://i.pravatar.cc/400?img=68",
+    socials: { linkedin: "#", twitter: "#", email: "#" },
+  },
+  {
+    id: 2,
+    name: "مهندس نگار حسینی",
+    role: "مدیر فنی و اجرایی",
+    bio: "کارشناس ارشد سازه، متخصص در پروژه‌های بلندمرتبه و مقاوم‌سازی",
+    image: "https://i.pravatar.cc/400?img=47",
+    socials: { linkedin: "#", email: "#" },
+  },
+  {
+    id: 3,
+    name: "مهندس امیر صادقی",
+    role: "مدیر طراحی و معماری",
+    bio: "معمار برجسته با رویکرد ترکیب معماری ایرانی و مدرن، متخصص BIM",
+    image: "https://i.pravatar.cc/400?img=59",
+    socials: { linkedin: "#", twitter: "#" },
+  },
+  {
+    id: 4,
+    name: "مهندس فاطمه رحیمی",
+    role: "مدیر کنترل کیفیت",
+    bio: "متخصص استانداردهای ISO، مسئول کنترل کیفیت در بیش از ۱۰۰ پروژه",
+    image: "https://i.pravatar.cc/400?img=44",
+    socials: { linkedin: "#", email: "#" },
+  },
+];

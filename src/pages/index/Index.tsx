@@ -1,5 +1,6 @@
 import Hero from "./component/Hero";
 import Team from "./component/Team";
+import Blog from "./component/Blog";
 import WhyUs from "./component/WhyUs";
 import TrustBar from "./component/TrustBar";
 import Services from "./component/Services";
@@ -18,6 +19,7 @@ export default function AllTogether() {
       <Portfolio />
       <Comments />
       <Team />
+      <Blog />
     </div>
   );
 }

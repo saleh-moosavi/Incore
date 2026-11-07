@@ -356,3 +356,53 @@ export const TeamMembers: IMember[] = [
     socials: { linkedin: "#", email: "#" },
   },
 ];
+
+interface IBlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  image: string;
+  category: string;
+  date: string;
+  readTime: string;
+  author: { name: string; avatar: string };
+}
+
+export const blogPosts: IBlogPost[] = [
+  {
+    id: 1,
+    title: "۷ نکته کلیدی در انتخاب پیمانکار ساختمانی",
+    excerpt:
+      "انتخاب پیمانکار مناسب، مهم‌ترین تصمیم در پروژه ساختمانی است. در این مقاله معیارهای اساسی را بررسی می‌کنیم که قبل از قرارداد باید بدانید.",
+    image: "/assets/peymankar.jpeg",
+    category: "راهنمای مشتری",
+    date: "۱۵ مهر ۱۴۰۳",
+    readTime: "۸ دقیقه",
+    author: {
+      name: "مهندس آرمانی",
+      avatar: "https://i.pravatar.cc/100?img=68",
+    },
+  },
+  {
+    id: 2,
+    title: "مقایسه سازه بتنی و فلزی: کدام برای پروژه شما مناسب‌تر است؟",
+    excerpt:
+      "هر کدام از سازه‌های بتنی و فلزی مزایا و معایب خاص خود را دارند. در این مقاله به مقایسه جامع از نظر هزینه، سرعت اجرا و دوام می‌پردازیم.",
+    image: "/assets/felez vs boton.jpg",
+    category: "دانش فنی",
+    date: "۳ مهر ۱۴۰۳",
+    readTime: "۱۲ دقیقه",
+    author: { name: "مهندس حسینی", avatar: "https://i.pravatar.cc/100?img=47" },
+  },
+  {
+    id: 3,
+    title: "مقاوم‌سازی ساختمان‌های قدیمی: چرا و چگونه؟",
+    excerpt:
+      "با توجه به زلزله‌خیز بودن ایران، مقاوم‌سازی ساختمان‌های فرسوده یک ضرورت است. روش‌های نوین مقاوم‌سازی و هزینه‌های آن را بررسی می‌کنیم.",
+    image: "/assets/moghavem sazi.jpg",
+    category: "بازسازی",
+    date: "۲۵ شهریور ۱۴۰۳",
+    readTime: "۱۰ دقیقه",
+    author: { name: "مهندس رحیمی", avatar: "https://i.pravatar.cc/100?img=44" },
+  },
+];

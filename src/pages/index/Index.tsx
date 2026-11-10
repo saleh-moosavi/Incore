@@ -5,6 +5,7 @@ import WhyUs from "./component/WhyUs";
 import TrustBar from "./component/TrustBar";
 import Services from "./component/Services";
 import Comments from "./component/Comments";
+import FinalCTA from "./component/FinalCTA";
 import Portfolio from "./component/Portfolio";
 import AboutSummary from "./component/AboutSummary";
 
@@ -20,6 +21,7 @@ export default function AllTogether() {
       <Comments />
       <Team />
       <Blog />
+      <FinalCTA />
     </div>
   );
 }

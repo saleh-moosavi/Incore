@@ -406,3 +406,10 @@ export const blogPosts: IBlogPost[] = [
     author: { name: "مهندس رحیمی", avatar: "https://i.pravatar.cc/100?img=44" },
   },
 ];
+
+export const CtaBenefits = [
+  "مشاوره تخصصی رایگان",
+  "بازدید از محل پروژه",
+  "برآورد دقیق هزینه",
+  "بدون هیچ تعهدی",
+];

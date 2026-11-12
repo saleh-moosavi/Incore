@@ -3,6 +3,7 @@ import {
   HiOutlineCurrencyDollar,
   HiOutlineLightBulb,
   HiOutlineOfficeBuilding,
+  HiOutlinePhone,
   HiOutlineSparkles,
   HiOutlineTruck,
   HiOutlineUserGroup,
@@ -18,12 +19,18 @@ import {
   HiOutlinePencilSquare,
   HiOutlineClipboardDocumentCheck,
   HiOutlineHomeModern,
+  HiOutlineMapPin,
+  HiOutlineEnvelope,
 } from "react-icons/hi2";
 import {
   FaBuilding,
   FaIndustry,
   FaCity,
   FaTowerBroadcast,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTelegram,
+  FaWhatsapp,
 } from "react-icons/fa6";
 
 export const heroStats = [
@@ -278,7 +285,7 @@ export const comments: IComments[] = [
     company: "هلدینگ عمران نوین",
     avatar: "https://i.pravatar.cc/150?img=12",
     rating: 3,
-    text: "همکاری با تیم عمران آرمان تجربه‌ای بی‌نظیر بود. دقت در جزئیات، پایبندی به زمان‌بندی و کیفیت اجرا فراتر از انتظار ما بود. پروژه برج مسکونی را با بالاترین استاندارد تحویل دادند.",
+    text: "همکاری با تیم عمران incore تجربه‌ای بی‌نظیر بود. دقت در جزئیات، پایبندی به زمان‌بندی و کیفیت اجرا فراتر از انتظار ما بود. پروژه برج مسکونی را با بالاترین استاندارد تحویل دادند.",
     project: "برج مسکونی آرمان",
   },
   {
@@ -298,7 +305,7 @@ export const comments: IComments[] = [
     company: "صنایع فولاد سپاهان",
     avatar: "https://i.pravatar.cc/150?img=33",
     rating: 4,
-    text: "پروژه صنعتی ما نیازمند دقت بالا و رعایت استانداردهای ایمنی سختگیرانه بود. تیم آرمان با تجهیزات مدرن و دانش فنی بالا این پروژه را در زمان مقرر به پایان رساند. کیفیت اجرا عالی بود.",
+    text: "پروژه صنعتی ما نیازمند دقت بالا و رعایت استانداردهای ایمنی سختگیرانه بود. تیم incore با تجهیزات مدرن و دانش فنی بالا این پروژه را در زمان مقرر به پایان رساند. کیفیت اجرا عالی بود.",
     project: "کارخانه صنایع فولاد",
   },
   {
@@ -308,7 +315,7 @@ export const comments: IComments[] = [
     company: "بازسازی عمارت قاجاری",
     avatar: "https://i.pravatar.cc/150?img=20",
     rating: 5,
-    text: "بازسازی عمارت قدیمی خانواده‌مان کار بسیار حساسی بود. تیم آرمان با احترام به معماری اصیل و استفاده از مصالح باکیفیت، نتیجه‌ای خلق کرد که همه خانواده از آن شگفت‌زده شدند.",
+    text: "بازسازی عمارت قدیمی خانواده‌مان کار بسیار حساسی بود. تیم incore با احترام به معماری اصیل و استفاده از مصالح باکیفیت، نتیجه‌ای خلق کرد که همه خانواده از آن شگفت‌زده شدند.",
     project: "بازسازی عمارت قاجاری",
   },
 ];
@@ -412,4 +419,56 @@ export const CtaBenefits = [
   "بازدید از محل پروژه",
   "برآورد دقیق هزینه",
   "بدون هیچ تعهدی",
+];
+
+export const footerQuickLinks = [
+  { to: "/", label: "خانه" },
+  { to: "/about", label: "درباره ما" },
+  { to: "/services", label: "خدمات" },
+  { to: "/portfolio", label: "نمونه‌کارها" },
+  { to: "/blog", label: "وبلاگ" },
+  { to: "/contact", label: "تماس با ما" },
+];
+
+export const footerServices = [
+  { to: "/services/construction", label: "اجرای ساختمان" },
+  { to: "/services/renovation", label: "بازسازی و نوسازی" },
+  { to: "/services/design", label: "طراحی و نقشه‌کشی" },
+  { to: "/services/consulting", label: "مشاوره مهندسی" },
+  { to: "/services/interior", label: "دکوراسیون داخلی" },
+  { to: "/services/materials", label: "تأمین مصالح" },
+];
+
+export const footerContacts = [
+  {
+    icon: HiOutlineMapPin,
+    label: "آدرس",
+    value: "تهران، خیابان ولیعصر، برج آرمان، طبقه ۱۲",
+    href: undefined,
+  },
+  {
+    icon: HiOutlinePhone,
+    label: "تلفن",
+    value: "۰۲۱-۱۲۳۴۵۶۷۸",
+    href: "tel:+982112345678",
+  },
+  {
+    icon: HiOutlineEnvelope,
+    label: "ایمیل",
+    value: "info@incore-construction.ir",
+    href: "mailto:info@incore-construction.ir",
+  },
+  {
+    icon: HiOutlineClock,
+    label: "ساعات کاری",
+    value: "شنبه تا پنجشنبه، ۸ تا ۱۷",
+    href: undefined,
+  },
+];
+
+export const footerSocials = [
+  { icon: FaInstagram, href: "#", label: "اینستاگرام" },
+  { icon: FaLinkedinIn, href: "#", label: "لینکدین" },
+  { icon: FaTelegram, href: "#", label: "تلگرام" },
+  { icon: FaWhatsapp, href: "#", label: "واتساپ" },
 ];
